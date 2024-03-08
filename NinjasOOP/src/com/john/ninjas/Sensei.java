@@ -2,7 +2,7 @@ package com.john.ninjas;
 
 import java.util.ArrayList;
 
-public class Sensei extends Ninja {
+public class Sensei extends Ninja implements Knowledgeable {
 	
 	private ArrayList<String> skills;
 	private String wisdom;
@@ -29,6 +29,14 @@ public class Sensei extends Ninja {
 
 	public void setWisdom(String wisdom) {
 		this.wisdom = wisdom;
+	}
+
+
+	@Override
+	public void drinkSake() {
+		this.setHealth(this.getHealth() + 20);
+		System.out.println(this.getName() + " drank some sake and gains +20 hp\n they are now at " + this.getHealth());
+		
 	}
 	
 	

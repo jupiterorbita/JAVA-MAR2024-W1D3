@@ -1,6 +1,6 @@
 package com.john.ninjas;
 
-public class Ninja {
+public abstract class Ninja {
 //	member variables
 	private String name;
 	private int health;
